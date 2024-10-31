@@ -63,7 +63,7 @@ module.exports = {
   }) => {
     return {
       compress: true,
-      port: devServerOptions?.devServerPort ?? 9000,
+      port: devServerOptions?.devServerPort ?? 8080,
       historyApiFallback: true,
       https: !!devServerOptions?.useHttps ?? false,
       devMiddleware: {

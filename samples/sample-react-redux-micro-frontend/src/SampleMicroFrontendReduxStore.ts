@@ -38,7 +38,7 @@ export function microFrontendReducer(prev: MicroFrontendState = {}, action: Micr
 function* fetchUser(): SagaIterator {
   const httpClient = yield getContext('httpClient');
 
-  const user = yield call([httpClient, httpClient.get], 'http://localhost:9000/api/user.json');
+  const user = yield call([httpClient, httpClient.get], 'http://localhost:8080/api/user.json');
 
   yield put({
     type: MicroFrontendActionType.RECEIVE_USER,
