@@ -15,6 +15,7 @@ const globalVariables = {
   __APP_NAME__: 'Employee Experience Generator',
   __BASE_URL__: process.env.baseUrl || `http${useHttps ? 's' : ''}://localhost:${devServerPort}`,
 
+  // todo replace with LAC values
   __CLIENT_ID__: process.env.clientId || 'e3bc175b-276c-4b4e-8b6d-0795de028111',
   __INSTRUMENTATION_KEY__: process.env.instrumentationKey || '958d6073-76a5-443a-9901-9ec4c35c030e',
 };
